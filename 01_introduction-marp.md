@@ -141,6 +141,10 @@ an emotional link between human and algorithm](https://infratonal.com/portfolio_
 
 ---
 
+![bg left](https://derivative.ca/sites/default/files/field/body-images/Quayola_Solar__0007_Solar_TheBentway_008.jpg)[Tracing the Sun: Quayola's Solar at The Bentway](https://derivative.ca/community-post/tracing-sun-quayolas-solar-bentway/73804)
+
+---
+
 その他沢山の作品が Derivative社の[Showcase](https://derivative.ca/showcase)で逐次公開されています。参考にしてみてください。
 
 ---
