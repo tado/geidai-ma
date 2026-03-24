@@ -132,11 +132,7 @@ with Multi-Projectors Geometry and Color Calibration](https://www.sonycsl.co.jp/
 
 --- 	
 
-![bg left](https://i.ytimg.com/vi/Tbaft6u2Roo/maxresdefault.jpg)[NONOTAK - SHIRO (TEASER)](https://youtu.be/Tbaft6u2Roo?si=NTA8ACZWeDK4oL37)
-
---- 	
-
-![bg left](https://i.ytimg.com/vi/r7S1PvfDb2E/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE0gWihlMA8=&rs=AOn4CLDHykmoyEF-QWBV9KE3mJyJJ-r43w)[NONOTAK - DUAL](https://youtu.be/r7S1PvfDb2E?si=X6aAJXKfE0DOtTrN)
+![bg left](https://derivative.ca/sites/default/files/field/body-images/NONOTAK_DAYDREAM-V2_02.jpg)[NONOTAK](https://derivative.ca/community-post/nonotak/66933)
 
 ---
 

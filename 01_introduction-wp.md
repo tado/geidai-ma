@@ -80,13 +80,9 @@
 
 [Interactive live visual system with venue simulator and chart output for BABYMETAL "METALIZM" - Kezzardrix](https://youtu.be/NzWxAE7C2Os?feature=shared&t=94)
 
-<img src="https://i.ytimg.com/vi/Tbaft6u2Roo/maxresdefault.jpg" width="640">
+<img src="https://derivative.ca/sites/default/files/field/body-images/NONOTAK_DAYDREAM-V2_02.jpg" width="640">
 
-[NONOTAK - SHIRO (TEASER)](https://youtu.be/Tbaft6u2Roo?si=NTA8ACZWeDK4oL37)
-
-<img src="https://i.ytimg.com/vi/r7S1PvfDb2E/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE0gWihlMA8=&rs=AOn4CLDHykmoyEF-QWBV9KE3mJyJJ-r43w" width="640">
-
-[NONOTAK - DUAL](https://youtu.be/r7S1PvfDb2E?si=X6aAJXKfE0DOtTrN)
+[NONOTAK](https://derivative.ca/community-post/nonotak/66933)
 
 <img src="https://derivative.ca/sites/default/files/field/body-images/Quayola_Solar__0007_Solar_TheBentway_008.jpg" width="640">
 
