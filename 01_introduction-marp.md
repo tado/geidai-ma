@@ -119,8 +119,7 @@ with Multi-Projectors Geometry and Color Calibration](https://www.sonycsl.co.jp/
 
 ---
 
-![bg left](https://derivative.ca/sites/default/files/field/body-images/Infratonal_XSP_586_28m.jpg)[Natural Encounters
-an emotional link between human and algorithm](https://infratonal.com/portfolio_page/encounters/)
+![bg left](https://derivative.ca/sites/default/files/field/body-images/Infratonal_XSP_586_28m.jpg)[Louk Amidou, INFRATONAL](https://derivative.ca/community-post/exploring-humanized-algorithmic-art-infratonal/65499)
 
 
 ---
