@@ -42,3 +42,8 @@ pre, code {
 ## 前回の復習 - バナナを回す
 
 実際にプログラムを作成しながら復習していきましょう!
+
+![height:420](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.jpg?raw=true)
+- [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/01_rotateBanana01.toe)
+
+
