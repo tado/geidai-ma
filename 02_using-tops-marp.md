@@ -32,6 +32,10 @@ pre, code {
 
 ---
 
+![bg](https://i0.wp.com/yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-062659-scaled.jpg?ssl=1)
+
+---
+
 ## 本日の内容
 
 本日は、Top (Texture Operator) を使用して画像 (テクスチャー) の操作、合成、画像効果などを学びます。まず前回の内容を復習してから、徐々に高度な内容へと発展させます。最後にNoise TOPを素材にして、独自の表現に挑戦します!
