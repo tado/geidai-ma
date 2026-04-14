@@ -146,3 +146,71 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - 画像処理を複数適用してみる
 ...etc.
 
+---
+
+## 本日の課題: ノイズで遊ぼう!
+
+簡単に二次元から四次元のノイズを生成することのできるNoise TOPを使用して、試行錯誤しながら自分なりの「作品」をつくってみる。プログラムの原型は以下からダウンロードしてください。
+
+まだ操作の基本を習得した段階ですが、まずはいろいろ試行錯誤しながら操作の基本感覚を身に付けていきましょう。その上で以下のような工夫をしてみてください。
+
+![height:300px](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-052805-scaled.png)
+- [ノイズの基本サンプル](https://github.com/tado/tdexamples/blob/main/02-01_noiseBasic.toe)
+
+---
+
+### 参考資料
+
+- [パーリンノイズ (wikipedia)](https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%BC%E3%83%AA%E3%83%B3%E3%83%8E%E3%82%A4%E3%82%BA)
+- [The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe](https://thebookofshaders.com/11/)
+
+![height:400](https://upload.wikimedia.org/wikipedia/commons/8/88/Perlin_noise_example.png)
+
+---
+
+### 基本: 使用されているオペレータのパラメーターを変化させてみる
+
+- [Noise TOP](https://docs.derivative.ca/index.php?title=Noise_TOP) (noise1)
+  - ノイズの細かさ
+  - ノイズの複雑さ
+  - ノイズの種類
+- [LFO CHOP](https://docs.derivative.ca/index.php?title=LFO_CHOP) (lfo1)
+  - 変化速度
+  - 変化する波形の種類
+- [HSV Adjust TOP](https://docs.derivative.ca/index.php?title=HSV_Adjust_TOP) (hsvadj1)
+  - 色相を変えてみる (hue)
+  - 再度を変えてみる (saturation)
+  - 明るさを変えてみる (brightness)
+
+---  
+
+### 応用: オペレーターを追加してみる
+
+- Noise TOPにNoise TOPを接続するとどうなるか?
+- HSV Adjust TOPの前後に別のTOPを追加してみる
+- LFO CHOPを追加して他のパラメータに参照させてみる
+
+---
+
+### ノイズを使用した作品例 1
+
+- ノイズ+ノイズ、Bloomエフェクトの追加
+
+![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-060944-scaled.jpg)
+- [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-02_noiseAdvanced01.toe)
+
+---
+
+### ノイズを使用した作品例 2
+
+- 万華鏡のようなパターンを生成
+
+![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-055046-scaled.jpg)
+- [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-03_noiseAdvanced02.toe)
+
+---
+
+## 実習!
+
+- ノイズを使用した作品を作成してみましょう!
+- 講義の最後の30分ほどで作品の発表を行います
