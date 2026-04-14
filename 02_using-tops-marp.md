@@ -97,7 +97,8 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 ---
 
-
+![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-filter.png?raw=true)
+[サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/04_imageProcessing.toe)
 
 ---
 
