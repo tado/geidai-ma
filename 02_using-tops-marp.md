@@ -59,7 +59,7 @@ pre, code {
 
 ---
 
-![height:480](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true)
+![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/02_rotateBanana-over.toe)
 
 ---
@@ -75,6 +75,8 @@ pre, code {
 
 ---
 
+![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-tile.png?raw=true)
+[サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/03_rotateBanana-tile.toe)
 
 
 ---
@@ -92,6 +94,10 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - Bloom TOP: 輝くような効果
 
 画像処理したTOPをSwitch TOPで切り替えてみる!
+
+---
+
+
 
 ---
 
