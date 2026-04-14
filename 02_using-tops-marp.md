@@ -59,6 +59,11 @@ pre, code {
 
 ---
 
+![height:480](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true)
+[サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/02_rotateBanana-over.toe)
+
+---
+
 ## 応用 2: タイリング
 
 画像を縮小してタイル状に並べてみる、方法は2つ
@@ -67,6 +72,10 @@ pre, code {
 2. Transform TOPで縮小してタイリング
 
 それぞれの方法を実際に作成しながら試してみましょう
+
+---
+
+
 
 ---
 
