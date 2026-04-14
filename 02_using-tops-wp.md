@@ -1,46 +1,14 @@
----
-marp: true
-paginate: true
----
-<style>
-section {
-  font-family: 'Hiragino Sans W4';
-  color: #444;
-  font-size: 24px;
-}
-b, strong {
-  font-family: 'Hiragino Sans W7';
-}
-ol {
-  list-style-type: decimal;
-}
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Hiragino Sans W7';
-  color: #2277cc;
-}
-pre, code {
-  font-family: 'JetBrains Mono Slashed', 'Noto Sans JP';
-  line-height: 1.3;
-}
-</style>
-
-## メディアアート・プログラミング I
 # TOPによるテクスチャー操作
-
-東京藝術大学芸術情報センター (AMC)
-田所 淳
-
----
 
 ![bg](https://i0.wp.com/yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-062659-scaled.jpg?ssl=1)
 
----
+
 
 ## 本日の内容
 
 本日は、Top (Texture Operator) を使用して画像 (テクスチャー) の操作、合成、画像効果などを学びます。まず前回の内容を復習してから、徐々に高度な内容へと発展させます。最後にNoise TOPを素材にして、独自の表現に挑戦します!
 
----
+
 
 ## TOPについて
 
@@ -50,7 +18,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 注：TouchDesignerの非商用版（Non-Commercial）は、解像度が1280x1280までに制限されています。
 
----
+
 
 ## 前回の復習 - バナナを回す
 
@@ -59,7 +27,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 ![height:400](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/01_rotateBanana.toe)
 
----
+
 
 ## バナナを回す応用 - TOPを組み合わせてみる
 
@@ -70,7 +38,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 - 応用 3: 様々な画像処理
 - 応用 4: フィードバック
 
----
+
 
 ### 応用 1: 文字を重ねる応用 1: 文字を重ねる
 
@@ -81,12 +49,12 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 ※ ポイント! 合成するTOPの解像度 (縦横のサイズ) を統一する!
 
----
+
 
 ![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/02_rotateBanana-over.toe)
 
----
+
 
 ### 応用 2: タイリング
 画像を縮小してタイル状に並べてみる、方法は2つ
@@ -96,13 +64,13 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 それぞれの方法を実際に作成しながら試してみましょう
 
----
+
 
 ![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-tile.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/03_rotateBanana-tile.toe)
 
 
----
+
 
 ### 応用 3: 様々な画像処理
 
@@ -118,12 +86,12 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 画像処理したTOPをSwitch TOPで切り替えてみる!
 
----
+
 
 ![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-filter.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/04_imageProcessing.toe)
 
----
+
 
 ### 応用 4: フィードバック
 
@@ -133,12 +101,12 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - パッチの接続はちょっと複雑
 - 実際に作成しながら解説していきます!
 
----
+
 
 ![height:500](https://github.com/tado/geidai-ma/raw/main/img/rotate-banana-feedback.png?raw=true)
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/05_feedback.toe)
 
----
+
 
 ## 実習!
 
@@ -150,7 +118,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - 画像処理を複数適用してみる
 ...etc.
 
----
+
 
 ## 本日の課題: ノイズで遊ぼう!
 
@@ -161,7 +129,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 ![height:300px](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-052805-scaled.png)
 - [ノイズの基本サンプル](https://github.com/tado/tdexamples/blob/main/02-01_noiseBasic.toe)
 
----
+
 
 ### 参考資料
 
@@ -170,7 +138,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 ![height:400](https://upload.wikimedia.org/wikipedia/commons/8/88/Perlin_noise_example.png)
 
----
+
 
 ### 基本: 使用されているオペレータのパラメーターを変化させてみる
 
@@ -186,7 +154,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
   - 再度を変えてみる (saturation)
   - 明るさを変えてみる (brightness)
 
----  
+  
 
 ### 応用: オペレーターを追加してみる
 
@@ -194,7 +162,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - HSV Adjust TOPの前後に別のTOPを追加してみる
 - LFO CHOPを追加して他のパラメータに参照させてみる
 
----
+
 
 ### ノイズを使用した作品例 1
 
@@ -203,7 +171,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 ![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-060944-scaled.jpg)
 - [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-02_noiseAdvanced01.toe)
 
----
+
 
 ### ノイズを使用した作品例 2
 
@@ -212,7 +180,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 ![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-055046-scaled.jpg)
 - [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-03_noiseAdvanced02.toe)
 
----
+
 
 ## 実習!
 
