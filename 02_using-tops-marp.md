@@ -43,8 +43,8 @@ pre, code {
 
 実際にプログラムを作成しながら復習していきましょう!
 
-![height:420](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.jpg?raw=true)
-- [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/01_rotateBanana01.toe)
+![height:400](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.png?raw=true)
+[サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/01_rotateBanana.toe)
 
 ---
 
