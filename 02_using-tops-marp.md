@@ -112,6 +112,11 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 ---
 
+![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-feedback.png?raw=true)
+[サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/05_feedback.toe)
+
+---
+
 ## 実習!
 
 ここまでの内容を踏まえて、TOPでいろいろ試してみましょう!
