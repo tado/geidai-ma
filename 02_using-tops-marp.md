@@ -218,9 +218,9 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 - ランダムな数値で激しく変化! - Pattern CHOP、LFO CHOP (pulse)、Hold CHOPを組合せる
 
-![height:420](rotate-banana-random.png)
+![height:420](https://yoppa.org/wp-content/uploads/2026/04/Screenshot-2026-04-15-at-9.32.56-scaled.jpg)
 
-- [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-03_noiseAdvanced02.toe)
+- [ダウンロード](https://github.com/tado/tdexamples/blob/main/02/04_noiseAdvanced03.toe)
 
 ---
 
