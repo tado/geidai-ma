@@ -214,6 +214,16 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 ---
 
+### ノイズを使用した作品例 3
+
+- ランダムな数値で激しく変化! - Pattern CHOP、LFO CHOP (pulse)、Hold CHOPを組合せる
+
+![height:420](rotate-banana-random.png)
+
+- [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-03_noiseAdvanced02.toe)
+
+---
+
 ## 実習!
 
 - ノイズを使用した作品を作成してみましょう!
