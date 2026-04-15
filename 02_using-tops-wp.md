@@ -1,6 +1,6 @@
 # TOPによるテクスチャー操作
 
-![bg](https://i0.wp.com/yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-062659-scaled.jpg?ssl=1)
+<img src="https://i0.wp.com/yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-062659-scaled.jpg?ssl=1" width="640">
 
 
 
@@ -24,7 +24,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 実際にプログラムを作成しながら復習していきましょう!
 
-![height:400](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.png?raw=true)
+<img src="https://github.com/tado/geidai-ma/blob/main/img/rotate-banana.png?raw=true" width="640">
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/01_rotateBanana.toe)
 
 
@@ -51,7 +51,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 
 
-![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true)
+<img src="https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-over.png?raw=true" width="640">
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/02_rotateBanana-over.toe)
 
 
@@ -66,7 +66,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 
 
-![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-tile.png?raw=true)
+<img src="https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-tile.png?raw=true" width="640">
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/03_rotateBanana-tile.toe)
 
 
@@ -88,7 +88,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 
 
-![height:500](https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-filter.png?raw=true)
+<img src="https://github.com/tado/geidai-ma/blob/main/img/rotate-banana-filter.png?raw=true" width="640">
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/04_imageProcessing.toe)
 
 
@@ -103,7 +103,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 
 
-![height:500](https://github.com/tado/geidai-ma/raw/main/img/rotate-banana-feedback.png?raw=true)
+<img src="https://github.com/tado/geidai-ma/raw/main/img/rotate-banana-feedback.png?raw=true" width="640">
 [サンプルファイル](https://github.com/tado/tdexamples/blob/main/01/05_feedback.toe)
 
 
@@ -126,7 +126,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 まだ操作の基本を習得した段階ですが、まずはいろいろ試行錯誤しながら操作の基本感覚を身に付けていきましょう。その上で以下のような工夫をしてみてください。
 
-![height:300px](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-052805-scaled.png)
+<img src="https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-052805-scaled.png" width="640">
 - [ノイズの基本サンプル](https://github.com/tado/tdexamples/blob/main/02-01_noiseBasic.toe)
 
 
@@ -136,7 +136,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 - [パーリンノイズ (wikipedia)](https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%BC%E3%83%AA%E3%83%B3%E3%83%8E%E3%82%A4%E3%82%BA)
 - [The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe](https://thebookofshaders.com/11/)
 
-![height:400](https://upload.wikimedia.org/wikipedia/commons/8/88/Perlin_noise_example.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Perlin_noise_example.png" width="640">
 
 
 
@@ -168,7 +168,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 - ノイズ+ノイズ、Bloomエフェクトの追加
 
-![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-060944-scaled.jpg)
+<img src="https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-060944-scaled.jpg" width="640">
 - [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-02_noiseAdvanced01.toe)
 
 
@@ -177,7 +177,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 - 万華鏡のようなパターンを生成
 
-![height:420](https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-055046-scaled.jpg)
+<img src="https://yoppa.org/wp-content/uploads/2025/04/Screenshot-2025-04-17-055046-scaled.jpg" width="640">
 - [ダウンロード](https://github.com/tado/tdexamples/blob/main/02-03_noiseAdvanced02.toe)
 
 
@@ -185,7 +185,7 @@ TOPにはPhotshopのようなテクスチャにリアルタイムに画像処理
 
 - ランダムな数値で激しく変化! - Pattern CHOP、LFO CHOP (pulse)、Hold CHOPを組合せる
 
-![height:420](https://yoppa.org/wp-content/uploads/2026/04/Screenshot-2026-04-15-at-9.32.56-scaled.jpg)
+<img src="https://yoppa.org/wp-content/uploads/2026/04/Screenshot-2026-04-15-at-9.32.56-scaled.jpg" width="640">
 
 - [ダウンロード](https://github.com/tado/tdexamples/blob/main/02/04_noiseAdvanced03.toe)
 
