@@ -18,6 +18,13 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 
 注：TouchDesignerの非商用版（Non-Commercial）は、解像度が1280x1280までに制限されています。
 
+## CPU vs. GPU
+
+CPUとGPUによる描画の違いをデモンストレーション。
+
+[動画](https://www.youtube.com/watch?v=WmW6SD-EHVY)  
+<img src="https://i.ytimg.com/vi/WmW6SD-EHVY/maxresdefault.jpg" width="640">
+
 
 
 ## 前回の復習 - バナナを回す
