@@ -26,7 +26,6 @@ CPUとGPUによる描画の違いをデモンストレーション。
 <img src="https://i.ytimg.com/vi/WmW6SD-EHVY/maxresdefault.jpg" width="640">
 
 
-
 ## 前回の復習 - バナナを回す
 
 実際にプログラムを作成しながら復習していきましょう!
