@@ -23,7 +23,7 @@ Texture Operators（テクスチャ・オペレーター）、通称 TOPs は、
 CPUとGPUによる描画の違いをデモンストレーション。
 
 [動画](https://www.youtube.com/watch?v=WmW6SD-EHVY)  
-![height:400](https://i.ytimg.com/vi/WmW6SD-EHVY/maxresdefault.jpg)
+<img src="https://i.ytimg.com/vi/WmW6SD-EHVY/maxresdefault.jpg" width="640">
 
 
 ## 前回の復習 - バナナを回す
