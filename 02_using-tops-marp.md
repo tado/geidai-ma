@@ -9,13 +9,13 @@ section {
   font-size: 24px;
 }
 b, strong {
-  font-family: 'Hiragino Sans W7';
+  font-family: 'Hiragino Sans W8';
 }
 ol {
   list-style-type: decimal;
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Hiragino Sans W7';
+  font-family: 'Hiragino Sans W8';
   color: #2277cc;
 }
 pre, code {
