@@ -86,7 +86,7 @@ pre, code {
 
 ### Movie File In TOPで映像を再生
 
-![height:360](./img/movie-file-in-top.jpg)
+![height:360](./img/movie-file-in-top.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/01_playMovie.toe)
 
 - 映像のソースを指定して再生 - 相対パスにしておくとプロジェクトを移動してもリンク切れしない
 - TOP to Chopでinfo CHOPに接続すると詳細な情報が参照可能
@@ -107,7 +107,7 @@ pre, code {
 
 ### Switch TOPによる映像の切り替え
 
-![height:360](./img/playMovie-switch.jpg)
+![height:360](./img/playMovie-switch.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/02_playMovieSwitch.toe)
 
 - 複数のMovie File In TOPをSwitch TOPに接続
 - indexの値を変更することで、映像を切り替える (0, 1, 2, 3...)
@@ -118,7 +118,7 @@ pre, code {
 
 ### Switch TOPのランダム自動切り替え
 
-![height:360](./img/playMovie-autoswitch.jpg)
+![height:360](./img/playMovie-autoswitch.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/03_playMovieRandom.toe)
 
 - Pattern CHOP (random) + LFO CHOP (Pulse) + Hold CHOPでランダムな番号を生成
 - Switch TOPのIndexの値にExportして、ランダムに映像を切り替えてみる
@@ -127,7 +127,7 @@ pre, code {
 
 ### エフェクトもランダムに適用
 
-![height:360](./img/playMovie-randAutoFx.jpg)
+![height:360](./img/playMovie-randAutoFx.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/04_playMovieRandFX.toe)
 
 - さらにエフェクトもランダムに適用されるようにしてみる
 - エフェクト系のTOP (Bloom, Edge, Transform, Level, Lens Distort など) 適用
@@ -137,7 +137,7 @@ pre, code {
 
 ### 音楽 (音) に反応して切り替える
 
-![height:360](./img/playMovie-audioReact.jpg)
+![height:360](./img/playMovie-audioReact.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/05_playMovieAudioReactive.toe)
 
 - 音に反応して映像やエフェクトが切り替わるようにしてみる
 - 音の入力: Audio File In CHOP
@@ -146,4 +146,5 @@ pre, code {
 
 ---
 
+## 本日の実習!
 
