@@ -54,7 +54,7 @@ pre, code {
 
 ### Beeple (Mike Winkelmann)
 
-![height:240](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mike_Winkelmann.png/500px-Mike_Winkelmann.png)
+![height:240](https://toledomuseum.org/img/asset/dG1hX3MzL2ltYWdlcy9iZWVwbGVfMS5wbmc/beeple_1.png?w=300&fit=crop&s=22c3fe475fbf2020e7d4d5ac1a82231c)
 
 - https://www.beeple-crap.com/
 - パデュー大学で計算機科学を専攻、1999年からデジタルアーティストとして活動
