@@ -94,6 +94,17 @@ pre, code {
 
 ---
 
+## 動画の再生の基本
+
+いろいろな方法で、動画をスイッチングしたりエフェクトをかけてみましょう!
+
+1. Switch TOPによる映像の切り替え
+1. Switch TOPのランダム自動切り替え
+1. エフェクトもランダムに適用
+1. 音楽 (音) に反応して切り替える
+
+---
+
 ### Switch TOPによる映像の切り替え
 
 ![height:360](./img/playMovie-switch.jpg)
@@ -123,4 +134,16 @@ pre, code {
 - 複数のエフェクトを並列して適用した後で、Switch TOPで選択する
 
 ---
+
+### 音楽 (音) に反応して切り替える
+
+![height:360](./img/playMovie-audioReact.jpg)
+
+- 音に反応して映像やエフェクトが切り替わるようにしてみる
+- 音の入力: Audio File In CHOP
+- 音の解析: Audio Analysis COMP
+- キックとスネアの音に反応させてみる
+
+---
+
 
