@@ -173,6 +173,17 @@ pre, code {
 - 音の解析: Audio Analysis COMP
 - キックとスネアの音に反応させてみる
 
+--- 
+
+### 映像の合成 (Composit)
+
+![height:360](./img/playMovieComposit.jpg) [ダウンロード](https://github.com/tado/tdexamples/blob/main/03/05_playMovieAudioReactive.toe)
+
+- Composit TOPを使用すると様々な演算方式複数の
+- 計算方法 - Add (加算), Multiply (乗算), Screen (スクリーン) など
+- 2つのランダムに切り替わる映像を合成して、ランダムな演算を適用してみる
+
+
 ---
 
 ## 本日の実習!
