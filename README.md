@@ -1,6 +1,9 @@
 # メディアアート・プログラミング I
 
-東京藝術大学芸術情報センター (AMC)
+- 東京藝術大学芸術情報センター (AMC)
+- [メディアアート・プログラミング Ⅰ 2026](https://yoppa.org/geidai-media1-26)
+- [サンプルプログラム](https://github.com/tado/tdexamples)
+
 
 ## 講義資料
 
