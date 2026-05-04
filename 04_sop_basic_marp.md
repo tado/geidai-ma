@@ -193,11 +193,27 @@ SOPのオペレータ上で様々な操作を行うことができます
 
 ---
 
-### 応用: より複雑なプロシージャルモデリング
+### Sweep SOPで面を回転しながら押し出して整形
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/05/sop-sweep-scaled.jpg)
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/08_sop_sweep.toe)
+
+---
+
+- Sweep SOPを使って、形態を指定したパスに沿って回転しながら押し出す
+- Sweep SOPのoutputで、**Skin Output**を**On**に
+- Convert SOPで、Convert to **Polygon**を指定
+- Facet SOPで**Compute Normal**を**On**に
+- あとは、これまでと同様にレンダリングしてTOPに
+
+---
+
+### より複雑なプロシージャルモデリング
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-01-160525-scaled.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/08_sop_complex.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/09_sop_complex.toe)
 
 ---
 
@@ -221,6 +237,6 @@ SOPのオペレータ上で様々な操作を行うことができます
 
 いくつか応用的なサンプルを作成しました。参考にしてください。
 
-- [応用サンプル 1](https://github.com/tado/tdexamples/blob/main/04/09_sop_procedual3D.toe)
-- [応用サンプル 2](https://github.com/tado/tdexamples/blob/main/04/10_sop_uneune.toe)
-- [応用サンプル 3](https://github.com/tado/tdexamples/blob/main/04/11_sop_uneNoise.toe)
+- [応用サンプル 1](https://github.com/tado/tdexamples/blob/main/04/10_sop_procedual3D.toe)
+- [応用サンプル 2](https://github.com/tado/tdexamples/blob/main/04/11_sop_uneune.toe)
+- [応用サンプル 3](https://github.com/tado/tdexamples/blob/main/04/12_sop_uneNoise.toe)

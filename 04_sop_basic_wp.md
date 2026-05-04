@@ -85,11 +85,19 @@ SOPを使うことで、プロシージャルに3Dジオメトリを生成する
 
 Merge SOPを使って複数のジオメトリを結合し、Copy SOPを使ってジオメトリを複製することができます。複製の際には位置・回転・スケールをCopy SOPのTransformタブで設定することが可能です。さらにTransform SOPを使って複製したジオメトリの位置や回転を変更することもできます。いろいろ試してみましょう。
 
+### Sweep SOPで面を回転しながら押し出して整形
+
+<img src="https://yoppa.org/wp-content/uploads/2026/05/sop-sweep-scaled.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/08_sop_sweep.toe)
+
+Sweep SOPを使うと、指定した形状をパスに沿って回転させながら押し出し、独特の3D形状を生成することができます。まずSweep SOPのOutputタブで **Skin Output** を **On** にします。次にConvert SOPを接続してConvert to **Polygon** を指定することで、スキンをポリゴンメッシュとして扱えるようにします。さらにFacet SOPで **Compute Normal** を **On** にすることで、ライティングが正しく計算されるよう法線情報を整えます。あとはこれまでと同様にGeometry COMPに接続してレンダリングし、Render TOPで画像として出力すれば完成です。
+
 ### 応用: より複雑なプロシージャルモデリング
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-01-160525-scaled.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/08_sop_complex.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/04/09_sop_complex.toe)
 
 さまざまなSOPを組み合わせることで、より複雑なプロシージャルモデリングに挑戦することができます。例えば、Line SOPとSweep SOPを組み合わせることで複雑な形状を作ることができます。さらにLine SOPをPattern SOPで変形させて波打つような形状へと変え、Copy SOPで複製を重ねていくことで、複雑で個性的な3Dジオメトリを生成することができます。
 
@@ -101,6 +109,6 @@ Merge SOPを使って複数のジオメトリを結合し、Copy SOPを使って
 
 いくつか応用的なサンプルを作成しました。参考にしてください。
 
-- [応用サンプル 1](https://github.com/tado/tdexamples/blob/main/04/09_sop_procedual3D.toe)
-- [応用サンプル 2](https://github.com/tado/tdexamples/blob/main/04/10_sop_uneune.toe)
-- [応用サンプル 3](https://github.com/tado/tdexamples/blob/main/04/11_sop_uneNoise.toe)
+- [応用サンプル 1](https://github.com/tado/tdexamples/blob/main/04/10_sop_procedual3D.toe)
+- [応用サンプル 2](https://github.com/tado/tdexamples/blob/main/04/11_sop_uneune.toe)
+- [応用サンプル 3](https://github.com/tado/tdexamples/blob/main/04/12_sop_uneNoise.toe)
