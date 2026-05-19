@@ -31,7 +31,7 @@ Instance OPとして利用できるデータソースは以下の4種類です�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-165133.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-01_instancing-basic.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/01_instancing-basic.toe)
 
 まずはCHOPを使ったインスタンシングの基本から始めます。Sphere SOPを作成してGeometry COMPに接続し、Geometry COMPのInstanceタブをオンにします。次にPattern CHOPを作成してInstance OPに指定します。Pattern CHOPでRampを設定するとx軸方向にインスタンスが均等に並び、Sineを設定するとy軸方向に波状に配置することができます。このように、CHOPのサンプル数がそのままインスタンスの総数になります。
 
@@ -39,7 +39,7 @@ Instance OPとして利用できるデータソースは以下の4種類です�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-170829.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-02_instancing-random.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/02_instancing-random.toe)
 
 次に、大量のオブジェクトを3次元空間にランダムに配置してみましょう。Pattern CHOPでパターンの種類として**Random**を選択し、tx・ty・tzのチャンネルにそれぞれ設定します。これにより、各インスタンスがランダムな位置に配置されます。Pattern CHOPのサンプル数を増やすだけでインスタンスの数を増やすことができ、3次元空間に大量のオブジェクトを高速に描画することが可能です。
 
@@ -49,7 +49,7 @@ Instance OPとして利用できるデータソースは以下の4種類です�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-171543.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-03_instancing-sop.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/03_instancing-sop.toe)
 
 SOPの頂点位置をインスタンスの配置に利用することもできます。ただし、SOPはそのままではInstance OPとして直接使用できないため、**SOP to CHOP**を使ってSOPのデータをCHOPに変換する必要があります。変換後、頂点の座標がインスタンスのTranslate（tx, ty, tz）に対応し、SOPの頂点ごとに1つのインスタンスが生成されます。これにより、任意の3D形状の表面にインスタンスを配置するような表現が可能になります。
 
@@ -57,7 +57,7 @@ SOPの頂点位置をインスタンスの配置に利用することもでき�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-173008.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-04_instancing-sop-noise.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/04_instancing-sop-noise.toe)
 
 SOPを使ったインスタンシングをさらに発展させ、Noise SOPを加えることで頂点位置を動的に変形させてみましょう。Noise SOPで変形させた後の頂点座標をSOP to CHOPで変換してInstance OPに指定します。Phong MATを適用してマテリアルも設定することで、ライティングも伴った豊かな表現になります。ノイズの時間変化によって頂点位置が刻々と変わるため、有機的に動くアニメーションを生成することができます。
 
@@ -67,7 +67,7 @@ SOPを使ったインスタンシングをさらに発展させ、Noise SOPを�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-174012.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-05_instancing-noise-color.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/05_instancing-noise-color.toe)
 
 TOPを使って各インスタンスの色を個別に制御してみましょう。Noise TOPを作成し、**TOP to CHOP**でTOPのピクセルデータをCHOPに変換します。変換されたRGB値がインスタンスのColor（colorr, colorg, colorb）に対応します。このとき重要なのは、**インスタンス数とTOPのピクセル数を一致させる**ことです。たとえばインスタンス数を2048個にする場合、Noise TOPのサイズも2048×1ピクセルに設定します。
 
@@ -75,7 +75,7 @@ TOPを使って各インスタンスの色を個別に制御してみましょ�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-182812.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-06_instancing-noise-top.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/06_instancing-noise-top.toe)
 
 TOPのRGB値を座標として利用し、インスタンスの位置をアニメーションさせることができます。TOPのR値をx座標、G値をy座標、B値をz座標に対応させることで、ピクセルの色がそのままインスタンスの空間配置を決定します。このとき、ピクセルフォーマットは**32-bit float（rgba）**を使用することで精度の高い座標値を扱えます。Noise TOPのノイズが時間とともに変化することで、インスタンスが滑らかに動くアニメーションが生まれます。インスタンス数とTOPのピクセル数を合わせる点はカラー制御のときと同様です（例: 2048×1）。
 
@@ -83,7 +83,7 @@ TOPのRGB値を座標として利用し、インスタンスの位置をアニ�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-184044.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-07_instancing-ramp-top.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/07_instancing-ramp-top.toe)
 
 TOPとCHOPを組み合わせることで、それぞれの長所を活かしたより複雑なアニメーションが実現できます。Noise TOPでx・y座標を制御し、Pattern CHOP（Ramp）でz座標を制御します。2つのデータソースは**Merge CHOP**で結合してから Instance OPに指定します。この構成により、xy平面ではTOPのノイズが揺らぎを与え、z軸方向にはRampによって手前に向かって降下するようなエフェクトを作ることができます。複数のデータソースを組み合わせることで、表現の幅が大きく広がります。
 
@@ -91,6 +91,6 @@ TOPとCHOPを組み合わせることで、それぞれの長所を活かした�
 
 <img src="https://yoppa.org/wp-content/uploads/2025/11/Screenshot-2025-11-11-074505.jpg" width="640">
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-08_instancing-3Dnoise.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/08_instancing-3Dnoise.toe)
 
 最後に、3Dノイズの情報を位置・色・角度のすべてに対応させた、より複雑な応用アニメーションに挑戦してみましょう。複数のNoise TOPを用意し、それぞれを位置制御・カラー制御・回転制御に割り当てることで、各パラメータを独立して細かくコントロールすることができます。ノイズが時間とともに変化するにつれて、インスタンスの位置・色・向きがすべて動的に変わり、複雑で有機的な3Dアニメーションが生み出されます。ここまで学んだ技術を自由に組み合わせ、オリジナルの表現を探ってみてください。

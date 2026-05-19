@@ -96,7 +96,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-165133.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-01_instancing-basic.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/01_instancing-basic.toe)
 
 ---
 
@@ -112,7 +112,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-170829.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-02_instancing-random.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/02_instancing-random.toe)
 
 ---
 
@@ -126,7 +126,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-171543.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-03_instancing-sop.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/03_instancing-sop.toe)
 
 ---
 
@@ -141,7 +141,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-173008.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-04_instancing-sop-noise.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/04_instancing-sop-noise.toe)
 
 ---
 
@@ -156,7 +156,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-174012.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-05_instancing-noise-color.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/05_instancing-noise-color.toe)
 
 ---
 
@@ -173,7 +173,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-182812.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-06_instancing-noise-top.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/06_instancing-noise-top.toe)
 
 ---
 
@@ -188,7 +188,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/05/Screenshot-2025-05-06-184044.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-07_instancing-ramp-top.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/07_instancing-ramp-top.toe)
 
 ---
 
@@ -203,7 +203,7 @@ pre, code {
 
 ![height:400](https://yoppa.org/wp-content/uploads/2025/11/Screenshot-2025-11-11-074505.jpg)
 
-[ダウンロード](https://github.com/tado/tdexamples/blob/main/05-08_instancing-3Dnoise.toe)
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/05/08_instancing-3Dnoise.toe)
 
 ---
 
