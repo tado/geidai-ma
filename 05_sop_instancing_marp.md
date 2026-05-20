@@ -25,7 +25,7 @@ pre, code {
 </style>
 
 ## メディアアート・プログラミング I
-# TouchDesigner基本 5<br/> - ジオメトリのインスタンシング
+# TouchDesigner基本 4<br/> - ジオメトリのインスタンシング
 
 東京藝術大学芸術情報センター (AMC)
 田所 淳
