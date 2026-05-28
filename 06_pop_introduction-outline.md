@@ -1,4 +1,4 @@
-# TouchDesigner基本 6 – POP入門
+# TouchDesigner基本 5 – POP入門
 
 ## POPとは?
 
@@ -23,6 +23,15 @@ Forget Everything?
 [Intro to POPs: The New Operator Family in TouchDesigner](https://www.youtube.com/watch?v=bWfUk6MF8B0)
 この動画はPOPの基本的な概念やサポートされるデータ構造、従来のSOPとの違いについて解説しており、導入として最適です。
 
+## POPでできること
+
+- まずは、POPで何ができるのか体感してみる
+- Derivativeの提供しているサンプル集 [POPs Examples Package](https://www.dropbox.com/scl/fo/dvvqnl61dgmicxoebl4sy/AFuNixO4WWcAbyM5KkUi9F4?rlkey=f152v4uuzou81c7477w1yf6im&st=zzro8oie&dl=0) をダウンロード
+- POPGuide/POPGuide.toe を開く
+- いろいろなサンプルを眺めてみましょう
+
+<img src="https://yoppa.org/wp-content/uploads/2026/05/popGuide-scaled.jpg" width="640">
+
 ## POPについて学ぶ
 
 <img src="https://learn.derivative.ca/wp-content/uploads/2025/11/109_10-cover.png" width="640">
@@ -45,6 +54,8 @@ TouchDesignerにおけるPOP（Particle Operators）は、GPUで高速処理さ�
 ## POPの基本 - ポイントの属性 (attribute) の値を表示
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-showinfo-scaled.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/01_pop-showinfo.toe)
 
 - POPもSOPと同様に様々な基本図形が用意されている
 - ここでは、直線、円、球をとりあげて、頂点の情報を表示してみる
@@ -77,6 +88,8 @@ POPには、以下のようなさまざまな方法で追加のアトリビュ�
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-addAttribute-scaled.jpg" width="640">
 
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/02_pop-addAttribute.toe)
+
 ## POPにおける色の扱い
 
 - POPでは「Color」属性（赤・緑・青・アルファの4成分）を使ってポイントごとに色を制御する。
@@ -87,10 +100,14 @@ POPには、以下のようなさまざまな方法で追加のアトリビュ�
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-lookupColor-scaled.jpg" width="640">
 
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/03_pop-lookupColor.toe)
+
 - さらに少しの工夫で頂点と色を使用したアニメーションを作成可能
 - 下記の例は、Noise POPを使用して頂点の位置を動かしている
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-lookupColorNoise-scaled.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/04_pop-lookupColorNoise.toe)
 
 ## POPを使用したパーティクルプログラミング
 
@@ -106,8 +123,12 @@ Particle POPは、GPUを活用して数百万のパーティクルを高速に�
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-particleRain-scaled.jpg" width="640">
 
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/05_pop-particleRain.toe)
+
 - もう一つ別のParticleの例
 - このサンプルはSphere POPからParticleを発生させている
 - 初期速度をSphere POPの法線ベクトルに設定する箇所がポイント
 
 <img src="https://yoppa.org/wp-content/uploads/2026/05/pop-particleSphere-scaled.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/06/06_pop-particleSphere.toe)
