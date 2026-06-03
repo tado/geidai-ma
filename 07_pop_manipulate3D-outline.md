@@ -45,3 +45,50 @@
 
 <img src="https://yoppa.org/wp-content/uploads/2026/06/POP-sphereTrail-scaled.jpg" width=640>
 
+- Trail POPを用いることで移動の軌跡を描くことができる
+- 描いた軌跡は、Line MATで線として描画
+- レンダリングしたテクスチャーにBloop TOPでエフェクトを付加している
+
+## ノイズで球を変形
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-noiseSphere-scaled.jpg" width=640>
+
+- レンダリングするPOPのプリミティブ図形自体のポイント情報も操作可能
+- Noise POPを用いると図形をPerlin Noise (Simplex Noise) を使用して変形できる
+- Noise POP の Output > Combine Operation を Translate along Normal にすると法線ベクトルの方向に変形するようになる。より自然な凹凸ができる。
+- 変形操作を行った後は、法線ベクトルを補正する必要がある
+- Noise POPの場合は Output > Computer Point Normals をONにする
+- SOPと違いGPU上で演算が行なわれるので、負荷が少ない
+
+## 変形した球の頂点に球を描画
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-SphereNoiseCopy-scaled.jpg" width=640>
+
+- Copy POPを用いて、変形した球の頂点のポイントに球を描画
+- SOPのGeometory Instancingした際と同様の表現が簡単に可能
+- SOPと違い、GPUベースで計算するので、負荷が軽い
+
+## 3Dの形状をねじって表現
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-torusTwist-scaled.jpg" width=640>
+
+- Twist POPを使用すると、3Dの形状を「ねじった」ような形状を生成できる
+- 変形した後は、狂った法線ベクトルを修正する必要がある
+- この例では、Twist POPで変形した後で、Normal POPを使用して法線ベクトルを補正している
+
+## 変形した形状を複製して合成
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-torusTwistCopy-scaled.jpg" width=640>
+
+- Twist POPで変形した形態を、Copy POPで複製している
+- 移動、回転、スケールの変更などを駆使することで、とても複雑な形態が生成される
+- Torus以外の形態でも試してみる
+
+
+## レンダリングを工夫する - PBR (物理ベースレンダリング) を試してみる
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-torusTwistPBR-scaled.jpg" width=640>
+
+- PBR（物理ベースレンダリング）とは、現実世界の光の物理的な振る舞いをシミュレートし、3Dオブジェクトの質感や光の反射を極めてリアルに描画するコンピュータグラフィックスの技術です。
+- TouchDesignerでは、PBR MATを使用することで物理ベースレンダリングが可能
+- 先程作成したTwistしたトーラスをコピーした物体を、PBRでレンダリングしてみる
