@@ -37,6 +37,11 @@
 <img src="https://yoppa.org/wp-content/uploads/2026/06/POP-noiseMove-scaled.jpg" width=640>
 
 - それぞれのポイントのP (座標) を個別に動かすことで球体を独立して動かすことが可能
-- Noise POPやPatter POPなどを使用して動きのパターンを作る
+- Noise POPやPatter POP、Particle POPなどを使用して動きのパターンを作る
 - この例では、Noise POPを使用している
+- Noise POPでは、Perlin Noise (Simplex Noise) だけでなく、Curl Noiseを使用したアニメーションも可能
+
+## ポイントの移動の軌跡を描く
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-sphereTrail-scaled.jpg" width=640>
 
