@@ -45,6 +45,7 @@ pre, code {
 - 3Dの形状をねじって表現
 - 変形した形状を複製して合成
 - PBR（物理ベースレンダリング）を試してみる
+- POPの様々な属性を操作したアニメーション
 
 ---
 
@@ -214,3 +215,31 @@ Random POP・Pattern POP・Attribute POPなどでポイントごとに属性を�
 - Twist+Copyしたトーラスにそのまま適用してみよう
 - **Metallic**（金属感）や **Roughness**（表面の粗さ）を調整
   - → 同じ形状でもまったく異なる質感・印象の映像表現が得られる
+
+---
+
+## 10. POPの様々な属性を操作したアニメーション
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/06/POP-instancing-scaled.jpg)
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/07/10_POP-instancing.toe)
+
+---
+
+これまで学んだ属性操作を総動員した集大成サンプル
+「画面の奥から大量の物体が回転しながら迫ってくる」アニメーション
+
+**制作手順:**
+1. **Point Generator POP** で元となるポイント群を生成
+2. **Random POP** でポイントごとに色（Color）を割り当てて着色
+3. **Pattern POP** で PointScale にばらつき → 物体のサイズをランダムに変化
+4. **Random POP + Math POP** を組み合わせて各物体に回転を加える
+5. **Pattern POP** で P(0)・P(1) にランダム値（x・y位置をランダムに散らす）、P(2) にRamp（奥から手前へ迫る動き）を設定
+
+---
+
+6. Geometry COMP・Camera COMP・Light COMP・Render TOP・**Phong MAT** でシーンをレンダリング
+7. **HSV Adjust TOP** で色調補正
+8. **Bloom TOP** でグローの輝きを追加 → 完成!
+
+→ POPの属性操作を組み合わせることで、本格的なアニメーションが効率よく制作できる

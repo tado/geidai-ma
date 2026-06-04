@@ -92,3 +92,19 @@
 - PBR（物理ベースレンダリング）とは、現実世界の光の物理的な振る舞いをシミュレートし、3Dオブジェクトの質感や光の反射を極めてリアルに描画するコンピュータグラフィックスの技術です。
 - TouchDesignerでは、PBR MATを使用することで物理ベースレンダリングが可能
 - 先程作成したTwistしたトーラスをコピーした物体を、PBRでレンダリングしてみる
+
+## POPの様々な属性を操作したアニメーション
+
+<img src="https://yoppa.org/wp-content/uploads/2026/06/POP-instancing-scaled.jpg" width=640>
+
+- 最後の実践的なサンプルとして、POPの様々な属性を操作したアニメーションを紹介する
+- 画面の奥から大量の物体が回転しながら迫ってくる
+- 以下のような手順で制作している
+- Point Generator POPで元になるポイントを生成
+- Random POPで着色
+- Pattern POPで物体の大きさにばらつきを持たせる
+- Random POPとMath POPを組み合わせて物体を回転
+- Pattern POPで P(0)、P(1) にrandomを設定して(x, y)の位置をランダムに、P(2) はRampを設定して奥から迫ってくる動きを作成
+- Geometory Comp、Camera Comp、Light Comp、Render TOP、Phong MATでレンダリング
+- HSV Adjast TOP、Bloom TOPで色調補正と輝きを追加
+- 以上の操作で、本格的なアニメーションが完成できました!
