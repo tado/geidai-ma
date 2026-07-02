@@ -1,5 +1,7 @@
 # TouchDesigner応用編 4 - コンピュータービジョン: MediaPipe Pluginをつかってみる
 
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.13.04.jpg" width="640">
+
 ## 今日の内容
 
 本日のレクチャーでは、TouchDesignerでコンピュータビジョン（CV）を扱う方法について解説します。
@@ -10,8 +12,6 @@
 
 TouchDesignerとMediaPipeを使ったCVの基本的な実装方法を学び、クリエイティブな表現の幅を広げていきましょう。
 
-<img src="https://yoppa.org/wp-content/uploads/2025/07/image-8.png" width="640">
-
 参考: [MediaPipeで遊んでみる](https://yoppa.org/mit-design4-22/14113.html)
 
 ## コンピュータビジョン (CV) とは
@@ -20,10 +20,10 @@ TouchDesignerとMediaPipeを使ったCVの基本的な実装方法を学び、�
 
 CVを用いることで、以下のような機能が実現できます。
 
-- Face Tracking: 顔を検出し、目や口の開閉、表情を読み取る。
-- Hand Tracking: 手の形や指の関節の位置をリアルタイムで追跡する。
-- Pose Estimation: 人物の骨格を検出し、姿勢や動作を分析する。
-- Object Detection: 特定の物体（人、車、動物など）を識別し、その位置を特定する。
+- Face Tracking: 顔を検出し、目や口の開閉、表情を読み取ります。
+- Hand Tracking: 手の形や指の関節の位置をリアルタイムで追跡します。
+- Pose Estimation: 人物の骨格を検出し、姿勢や動作を分析します。
+- Object Detection: 特定の物体（人、車、動物など）を識別し、その位置を特定します。
 
 これらの技術は、スマートフォンの顔認証、自動車の自動運転支援システム、工場の製品検査、医療画像の診断支援など、すでに私たちの生活や社会の様々な場面で活用され、重要な役割を担っています。
 
@@ -99,7 +99,7 @@ MediaPipeコンポーネントが読み込まれると、ドロップダウン�
 
 ※ サンプルファイルを実行する際には、releaseフォルダ内のtoxesフォルダを、サンプルファイルと同じ階層に配置してください。
 
-### 例1: FaceLandmarkからSOPのメッシュ生成
+### FaceLandmarkからSOPのメッシュ生成
 
 MediaPipeのFaceLandmark機能で検出した顔のランドマーク（特徴点）を基に、TouchDesigner上で3Dメッシュをリアルタイムに生成してみましょう。
 
@@ -109,20 +109,64 @@ MediaPipeのFaceLandmark機能で検出した顔のランドマーク（特徴�
 <img src="https://yoppa.org/wp-content/uploads/2025/07/image-6.png" width="640">
 
 3. MediaPipe.toxの右側にface_tracking.toxを配置、さらにNull SOPをその右に
-4. 下記のように配線すると、顔のメッシュが生成される（[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/01_faceTracker.toe)）
+4. 下記のように配線すると、顔のメッシュが生成される
 
 <img src="https://yoppa.org/wp-content/uploads/2025/07/image-7.png" width="640">
 
-5. あとは、これまでと同様にレンダリングが可能、例: ノイズマン!（[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/02_faceTrackerNoise.toe)）
+5. 顔のメッシュをレンダリングするには、カメラの画角や位置をMediaPipeで出力されたメッシュの3D座標に合わせて調整する必要があります。カメラの位置と画角は以下の設定にすると、顔のメッシュが正しくレンダリングされます。
 
-<img src="https://yoppa.org/wp-content/uploads/2025/07/image-8.png" width="640">
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-14.59.48.jpg" width="320"><img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.00.56.jpg" width="320">
 
-### 例2: Hand Trackingで物体を動かす
+5. 最終的に下記のように配線すると、顔のメッシュが生成されます。カメラ内の顔と生成されたメッシュがピッタリと重なります。
 
-<img src="https://yoppa.org/wp-content/uploads/2025/07/image-10.png" width="640">
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.06.00-scaled.jpg" width="640">
 
-Hand Tracking（hand_tracking.tox）を用いると、両手の各指の細かな座標が全て取得可能です。インタラクティブな様々なプロジェクトに応用可能となります。（[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/03_handTracker.toe)）
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-14.53.49.jpg" width="640">
 
-<img src="https://yoppa.org/wp-content/uploads/2025/07/image-9.png" width="640">
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/01_faceTracker.toe)
 
-例えば、Hand Trackingで手の座標を取得して、その情報を元に人差し指の先に球体を配置してみました。詳細はパッチを使用して説明していきます!（[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/04_handTrackerBall.toe)）
+
+### Face Meshにノイズをマッピング
+
+生成されたFace Meshは、SOPのオペレーターとして扱えるため、これまでと同様に様々なオペレーターを組み合わせて加工することが可能です。例えば、Face Meshにノイズをマッピングして、顔の表面に動的な変化を加えることができます。
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.12.29-scaled.jpg" width="640">
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.13.04.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/02_faceTrackerNoise.toe)
+
+### Hand Trackingで手の座標を取得
+
+hand_tracking.toxを使用すると、両手の各指の細かな座標をリアルタイムで取得することができます。これにより、手の動きやジェスチャーをインタラクティブな作品に応用することが可能です。
+
+各指の関節の座標は、hand_tracking.toxのinstance_dataからCHOPとして出力されます。この情報を利用して3DオブジェクトをInstanceすることで、手の動きに応じてオブジェクトを操作することができます。
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.26.35-scaled.jpg" width="640">
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.28.15.jpg" width="640">
+
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/03_handTracker.toe)
+
+
+
+### ユーザーインターフェイスとしてのHand Trackingの活用
+
+Hand Trackingで取得した手の座標を利用して、ユーザーインターフェイスとしての操作を実現することも可能です。そのためには、特定の指の座標を抽出する必要があります。例えば、両手の人差し指の先端の座標を取得し、その位置に球体を配置し、さらにその間を直線で結んでみましょう。ここでは、hand_tracking.toxのinstance_dataから、特定の指の座標のみを抽出するために、Trim CHOPを使用しています。
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.20.17-scaled.jpg" width="640">
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.22.45.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/04_handTrackerUI.toe)
+
+さらに、両手の親指の先の座標も取得して、生成される四角形によってカメラ入力の映像に変化をつけてみましょう。ここでは、指の座標をの情報をLens Distort TOPのパラメータに接続することで、カメラ映像の歪みを制御しています。
+
+この手法を応用して、オーディオの制御、パーティクルの挙動の制御、さらにはインタラクティブインスタレーションの制作など、様々な表現に展開することが可能です。
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.28.05-scaled.jpg" width="640">
+
+<img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.28.21.jpg" width="640">
+
+[ダウンロード](https://github.com/tado/tdexamples/blob/main/11/05_handTrackerDistort.toe)
