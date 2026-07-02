@@ -37,7 +37,7 @@ pre, code {
 
 ---
 
-![height:480](https://yoppa.org/wp-content/uploads/2025/07/image-8.png)
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.13.04.jpg)
 
 参考: [MediaPipeで遊んでみる](https://yoppa.org/mit-design4-22/14113.html)
 
@@ -162,31 +162,90 @@ pre, code {
 
 ![height:280](https://yoppa.org/wp-content/uploads/2025/07/image-7.png)
 
+---
+
+## 例1: FaceLandmarkからSOPのメッシュ生成
+
+5. 顔のメッシュをレンダリングするには、カメラの画角や位置をMediaPipeで出力されたメッシュの3D座標に合わせて調整する
+
+![height:340](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-14.59.48.jpg) ![height:340](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.00.56.jpg)
+
+---
+
+## 例1: FaceLandmarkからSOPのメッシュ生成
+
+6. 最終的に下記のように配線すると、顔のメッシュが生成される
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.06.00-scaled.jpg)
+
+---
+
+カメラ内の顔と生成されたメッシュがピッタリと重なる
+
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-14.53.49.jpg)
+
 ダウンロード: [faceTracker](https://github.com/tado/tdexamples/blob/main/11/01_faceTracker.toe)
 
 ---
 
-あとは、これまでと同様にレンダリングが可能、例: ノイズマン!
+## 例2: Face Meshにノイズをマッピング
 
-![height:440](https://yoppa.org/wp-content/uploads/2025/07/image-8.png)
+- 生成されたFace MeshはSOPのオペレーターとして扱える
+- これまでと同様に様々なオペレーターを組み合わせて加工可能
+- 例: Face Meshにノイズをマッピングして、顔の表面に動的な変化を加える
+
+![height:320](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.12.29-scaled.jpg)
+
+---
+
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.13.04.jpg)
 
 ダウンロード: [faceTrackerNoise](https://github.com/tado/tdexamples/blob/main/11/02_faceTrackerNoise.toe)
 
 ---
 
-## 例2: Hand Trackingで物体を動かす
+## 例3: Hand Trackingで手の座標を取得
 
-![height:280](https://yoppa.org/wp-content/uploads/2025/07/image-10.png)
+- hand_tracking.toxで両手の各指の細かな座標をリアルタイムで取得可能
+- 各指の関節の座標は、instance_dataからCHOPとして出力される
+- この情報で3DオブジェクトをInstanceすると、手の動きに応じて操作できる
 
-- Hand Tracking (hand_tracking.tox) で両手の各指の細かな座標が全て取得可能
-- インタラクティブな様々なプロジェクトに応用可能
+![height:300](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.26.35-scaled.jpg)
+
+---
+
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-15.28.15.jpg)
 
 ダウンロード: [handTracker](https://github.com/tado/tdexamples/blob/main/11/03_handTracker.toe)
 
 ---
 
-Hand Trackingで手の座標を取得 → 人差し指の先に球体を配置
+## 例4: ユーザーインターフェイスとしてのHand Trackingの活用
 
-![height:440](https://yoppa.org/wp-content/uploads/2025/07/image-9.png)
+- 手の座標を利用してユーザーインターフェイスとしての操作を実現
+- 両手の人差し指の先端の座標を取得 → 球体を配置し、その間を直線で結ぶ
+- instance_dataから特定の指の座標のみを抽出するためにTrim CHOPを使用
 
-ダウンロード: [handTrackerBall](https://github.com/tado/tdexamples/blob/main/11/04_handTrackerBall.toe)
+![height:300](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.20.17-scaled.jpg)
+
+---
+
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.22.45.jpg)
+
+ダウンロード: [handTrackerUI](https://github.com/tado/tdexamples/blob/main/11/04_handTrackerUI.toe)
+
+---
+
+## 例4 (続き): カメラ映像の歪みを制御
+
+- 両手の親指の先の座標も取得し、生成される四角形で映像に変化をつける
+- 指の座標をLens Distort TOPのパラメータに接続して歪みを制御
+- オーディオ制御、パーティクル制御、インスタレーション制作などに応用可能
+
+![height:300](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.28.05-scaled.jpg)
+
+---
+
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.28.21.jpg)
+
+ダウンロード: [handTrackerDistort](https://github.com/tado/tdexamples/blob/main/11/05_handTrackerDistort.toe)
