@@ -155,6 +155,12 @@ hand_tracking.toxを使用すると、両手の各指の細かな座標をリア
 
 Hand Trackingで取得した手の座標を利用して、ユーザーインターフェイスとしての操作を実現することも可能です。そのためには、特定の指の座標を抽出する必要があります。例えば、両手の人差し指の先端の座標を取得し、その位置に球体を配置し、さらにその間を直線で結んでみましょう。ここでは、hand_tracking.toxのinstance_dataから、特定の指の座標のみを抽出するために、Trim CHOPを使用しています。
 
+MediaPipeのHand Trackerでの手の各パーツの番号については、以下の資料を参照してください。
+
+- [Hand landmarks detection guide > Models](https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker#models)
+
+<img src="https://developers.google.com/static/mediapipe/images/solutions/hand-landmarks.png" width="640">
+
 <img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.20.17-scaled.jpg" width="640">
 
 <img src="https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-02-at-17.22.45.jpg" width="640">
