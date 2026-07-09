@@ -62,7 +62,7 @@ pre, code {
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
 - TouchDesignerのプロジェクトはContainerの階層構造になっている
   - Container COMPをダブルクリックで中に入る
@@ -74,7 +74,7 @@ pre, code {
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
 - 試しに、ムービーや画像を回転させるContainerを作ってみる
   - 入力 : 回転させる元画像TOP
@@ -85,53 +85,74 @@ pre, code {
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
 - 以下のようなパッチを作成
 - 作成終了したら「u」で上の階層へ
 
 ![height:400](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-05.png)
 
----
-
-## プロジェクトの構造
-
-- Containerに画像や動画を入力すると、回転されて出力される
-
-![height:360](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-06.png)
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
-- Containerの外部から内部のパラメータも設定可能
-  - 例えば、回転の速度を変化できるように
-- まず、Containerの外部にConstant CHOPを配置してパラメータ表示
-- Constantの値の上で右クリックして「Copy Parameter」を選択
-- Container内のLFOのfrequencyの数値で「Paste Reference」を選択
-
-![height:280](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-07.png) ![height:280](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-08.png)
+- Container COMPを用いることでプロジェクトの階層構造を作ることができる
+- プロジェクトのネットワークを整理整頓することが可能
+- まずは「回転するバナナ」の簡単な例で試してみる
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
-- Containerの外部からパラメータをコントロールできるように
-- このパッチを使用してGUIを追加していきます!
+- 元になるプロジェクト
+- ひとつの階層に全てのオペレータが配置されている
 
-![height:440](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-09.png)
+![height:360](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-14.43.54-scaled.jpg)
+
+---
+
+## Container COMPにまとめる
+
+- Container COMPにひとまとめにして入れたいオペレーターを選択
+- この例では4つのオペレーターを選択している
+
+![height:360](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-14.52.40-scaled.jpg)
 
 ---
 
-## プロジェクトの構造
+## Container COMPにまとめる
 
-- 参考: Container COMPのComponent Editorを使用する方法
-  - Container COMPの設定パネルの中にパラメーターを入れることも可能
-  - 実際に作成しながら解説します
+- 右クリックしてメニューから「Collapse Selected」を選択
 
-![height:400](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-10.png)
+![height:360](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-14.45.11-scaled.jpg)
 
 ---
+
+## Container COMPにまとめる
+
+- 選択したオペレータが一つのContainer COMPに集約される
+- ダブルクリックすると、Container COMPの中の階層に行くことができる
+- 「u」キーで元に戻る
+
+![height:360](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-14.45.38-scaled.jpg)
+
+---
+
+## Container COMPにパラメーターを追加する
+
+---
+
+## Container COMPにパラメーターを追加する
+
+- Container COMPのプロパティーに新規にパラメータを追加することもできる
+- 数値、ボタン、色 (RGBA) など様々なデータを外部入力できるようになる
+- Container COMPの「i」を右クリックして、「Costmise Component」を選択
+
+![height:320](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-15.06.18-scaled.jpg)
+
+---
+
 
 ## GUIを作成する - 基本編
 
@@ -149,6 +170,14 @@ pre, code {
 
 ## GUIを作成する - 基本編
 
+- パラメーターを追加して、データの種類、初期値、最大値、最小値など詳細を指定していく
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-15.08.49.jpg) ![height:320](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-15.09.19.jpg)
+
+---
+
+## GUIを作成する - 基本編
+
 - uiをダブルクリック
 - パレットの、UI > Basic Widget からSliderHorzを選択して追加
 - パラメータのLabel > Widget Label を「Rotation Speed」に
@@ -159,33 +188,43 @@ pre, code {
 
 ## GUIを作成する - 基本編
 
-- sliderHorzのValuesのvalueをCopy Parameter
-- Container1内のLFOのFrequencyに、Paste Reference
+- パレットから UI > Basic Widget を選択すると様々なGUI部品を追加できる
+- 例えば、SliderHorz COMPを追加して横スライダーを追加
+- 生成された値を、Container COMPのパラメータに関連付けることで、GUIから操作できるようになる
 
-![height:340](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-13.png) ![height:340](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-14.png)
+![height:320](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-15.40.15-scaled.jpg)
 
 ---
 
 ## GUIを作成する - 基本編
 
 - F1キーでプロジェクトを再生
-- 左上に、回転スピードを変更するGUIが追加されているはず
+- 画面左下にGUIが追加されている
 
-![height:440](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-15.png)
-
----
-
-## GUIを作成する - 応用編
+![height:440](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-19.23.17.jpg)
 
 ---
 
-## GUIを作成する - 応用編
+## GUIを作成する - 応用編: 複数ウィンドウを生成する
 
-- 超簡易VJパッチ
-- ムービーの切り替え、各種エフェクトを行うことのできるGUIを作成します!
-- 詳細はパッチで
+---
 
-![height:440](https://yoppa.org/wp-content/uploads/2026/07/toxcomp-16.png)
+## GUIを作成する - 応用編: 複数ウィンドウを生成する
+
+- 複数ウィンドウを生成する
+- メインのウィンドウにはプロジェクトの最終出力を表示、サブウィンドウにはGUIを表示
+- Window COMPを2つ追加して同時に開くようにする
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-16.00.24-scaled.jpg)
+
+---
+
+## GUIを作成する - 応用編: 複数ウィンドウを生成する
+
+- Openボタンを押すと、2つのWindow COMPが同時に開く
+- メインのウィンドウにはプロジェクトの最終出力を表示、サブウィンドウにはGUIを表示
+
+![height:400](https://yoppa.org/wp-content/uploads/2026/07/Screenshot-2026-07-09-at-16.01.01-scaled.jpg)
 
 ---
 
